@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=7, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // alert( " Coloque primeiro os valores das notas." + "\n Observe o total das Notas." + "\n Obtenha a Media das notas.");
+
+        // let a = Number(window.prompt("Digire a primeira nota"));
+
+        // let b = Number(prompt("Digite a segunda nota"));
+
+        // let c = Number(prompt("Digite a terceira nota"));
+
+        // alert(a+b+c);
+
+        // let soma = a+b+c;
+        // let resultado = (a+b+c) / 3;
+
+        // alert("a media é: " + resultado)
+
+        // alert("Total das Notas é = " + soma + "\n Total da Media é = " + resultado );
+        // ==========================================================
+        // switch (resultado) {
+        //     case 0:
+        //         alert("eu entendo que você deve ter desistido do curso, pode ir embora, REPROVADOOO!!")
+
+        //         break;
+        //     case 1:
+        //         alert("Tava dormindo lindão??, com sono né,eu entendo, pois pode ir pra casa dormir, REPROVADO! <3")
+        //         break;
+
+        //     case 2:
+        //         alert("Sem foco, Sem interesse real, Ta querendo Desistir? REPROVADO!!! ")
+        //         break;
+
+        //     case 3:
+        //         alert("tava com fome né? vai lanchar então! REPROVADO!!")
+        //         break;
+
+        //     case 4:
+        //         alert("Num é possivel cara!, Presta atenção na aula mermão! REPROVADO")
+        //         break;
+
+
+        //     case 5:
+        //         alert("Olha que ta chegando perto de passar, mas ainda falta! vá estudar. REPROVADO!!")
+        //         break;
+
+
+        //     case 6:
+        //         alert("Ta pertinho, mas ainda conseguiu falhar, decepcionante T-T, REPROVADO!!! ")
+        //         break;
+
+
+        //     case 7:
+        //         if (c>=8) {
+        //             alert("passou dessa vez, será que na proxima passa??? APROVADO!")
+        //         } else {
+        //             alert("lhé falta temperro, RECUPERAÇÂO!")
+        //         }
+                
+        //     case 8:
+        //         if (c>=8) {
+        //             alert("passou dessa vez, será que na proxima passa??? APROVADO!")
+        //         } else {
+        //             alert("Sem Palavras para seu fracasso, RECUPERAÇÂO!")
+        //         }
+                
+        //     case 9:
+        //         if (c>=8) {
+        //             alert("passou dessa vez, será que na proxima passa??? APROVADO!")
+        //         } else {
+
+        //         }
+
+        //     case 10:
+        //         if (c>=8) {
+        //             alert("passou dessa vez, será que na proxima passa??? APROVADO!")
+        //         } else {
+
+        //         }
+
+        //     case 11:
+        //         if (c>=8) {
+        //             alert("passou dessa vez, será que na proxima passa??? APROVADO!")
+        //         } else {
+
+        //         }
+        //     default:
+        //         break;
+        // }
+        let somadenotas = 0;
+        let quantidadeNotas = 4;
+
+        for (let index = 1; index <= quantidadeNotas; index++) {
+            
+            let nota = parseFloat(prompt("Qual a " +index+ "° nota?"))
+
+
+            somadenotas += nota;
+            
+        }
+        let media = somadenotas / quantidadeNotas;
+
+        alert("Asua media final é: "+ media)
+    </script>
+    
+</body>
+</html>

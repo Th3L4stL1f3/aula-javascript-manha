@@ -24,6 +24,45 @@
         alert("a media é: " + resultado)
 
         alert("Total das Notas é = " + soma + "\n Total da Media é = " + resultado );
+        
+        // if (resultado>=7) { 
+        //     if (c>=8) alert("Você está aprovado")
+        //         else alert ("Você está de recuperação")
+
+            
+        // }  else {
+        //     alert("Você está reprovado")
+        // ==================================
+        // // }
+        // resultado>=7?c>=8?alert("Voce esta Aprovado")
+
+        // :alert("VOCÊ ESTÁ REPROVADO")
+
+        // :alert("Você está de recuperação")
+// ==================================================================================
+        let status;
+
+        if (resultado>=7) {
+            if (c>=8) status="aprovado"
+            else status="recuperação"
+        }  else {
+            status="reprovado"
+        }
+
+        switch (status) {
+            case "aprovado":
+                alert("Você foi aprovado")                
+                break;
+            case "reprovado":
+                alert("Você foi reprovado")
+                break;
+            case "recuperação":
+                alert("Você está de recuperação")
+                break;
+            default:
+                alert("Não configurei nada")
+                break;
+        }
 
     </script>
     
