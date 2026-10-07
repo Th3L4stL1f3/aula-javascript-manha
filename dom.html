@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #minhadiv {
+            background-color: blue;
+            height: 300px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="minhadiv"></div>
+    <input type="text" name="" id="campo-texto">
+    <button id="meu-botao">Mudar texto</button>
+    <script>
+        // let numero = "SETE"
+        let divazul = document.querySelector("#minhadiv");
+        let textoinput = document.querySelector("#campo-texto")
+        console.log(divazul);
+
+        minhafuncao = function mudartexto() {
+            // divazul.textContent =prompt("Digite o nome desejado: ")
+            divazul.textContent = textoinput.value;
+        }
+            
+        let botao = document.querySelector("#meu-botao")
+        console.log(botao);
+        botao.addEventListener("click", minhafuncao)
+       
+
+    </script>
+</body>
+</html>
